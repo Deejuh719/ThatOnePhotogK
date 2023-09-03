@@ -20,3 +20,4 @@ Updates/issues that have occurred as I've been building the page:
 09-03-2023
 1. Finally uploaded via VSCode
 2. Added a line of bolded and colored text to aboutme.html
+3. Added TA collaborators 
