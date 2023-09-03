@@ -16,3 +16,7 @@ Updates/issues that have occurred as I've been building the page:
 1. Moved comments to bottom of CSS until uploaded to repository
 2. Added meta tags and keywords
 3. Created GitHub repos and added readme
+
+09-03-2023
+1. Finally uploaded via VSCode
+2. Added a line of bolded and colored text to aboutme.html
