@@ -1,0 +1,94 @@
+<!--about me-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Khadijah</title>
+  <link rel="icon" title="image/x-icon" href="./images/webpage.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/minimalcomputer.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header2">
+    <div class="header-content">
+      <h1 class="h1">Who's This Khadijah Character Anyway?</h1>
+  </header>
+ <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">K's Web Thingy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Landing Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sitecontents.html">Site Contents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Mini Blog</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  <!--about me-->
+<div class="container-fluid mt-3">
+  <h1 class="p2">So You Wanna Know About Me?</h1>
+  <div class="row">
+    <div class="col"><p class="p4">
+      If you&apos;ve come this far, obviously you want to know some more about me.
+      First off, I&apos;ve been interested in computers since the invention of the internet, introduced by the gentle, caressing sound of the &quot;<a href="https://youtu.be/D1UY7eDRXrs" target="_blank">Robot Wars</a>&quot; otherwise known as AOL Dialup.
+      But when I&apos;m not making 500 lines of code that are as complicated as I can possibly make them, I'm in to my various hobbies.
+      One of those is photography. <p class="p4"id="showImageText">That photo over there &rarrw;click&rarrw;</p> <p class="p4">is actually one I took for a project in college.
+      I also do cosplay, painting, study psychology, am an avid gamer, and love music and true crime podcasts.
+      But when I&apos;m not doing any of that, or working, I can usually be found hiking in the mountains with my dearest and sometimes our friends.
+    </p></div>
+    <div class="col">
+        <div class="image-container">
+            <img id="hiddenImage" src="./images/housesintrees.jpg" alt="Photo of houses from the trees" width="500" height="400" style="display:none;">
+        </div>
+  </div>
+</div>
+  <footer>
+    <div class="footer-icons">
+      <p class="p5"> Visit my cosplay Instagram, my LinkedIn, and my favorite Spotify Podcast</p>
+      <a href="https://www.instagram.com/procrastination_cosplay/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/khadijah-surratt/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://open.spotify.com/show/1cpyLfDHP1cNnyOb478qrt?si=QJYF8Yw6QH21z8ivvbc33w" target="_blank"><i class="fab fa-spotify"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+  <script>
+  const showImageText = document.getElementById('showImageText');
+  const hiddenImage = document.getElementById('hiddenImage');
+
+  showImageText.addEventListener('click', () => {
+    hiddenImage.style.display = 'block'; // Show the image
+  });
+</script>
+</body>
+</html>
+</body>

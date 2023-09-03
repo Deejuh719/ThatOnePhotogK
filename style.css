@@ -1,0 +1,217 @@
+.header {
+  background-image: url("./images/compandcoffee.jpg");
+  background-size: cover;
+  background-position: 0vmin;
+  background-repeat: no-repeat;
+  height: 30vh;
+  position: relative;
+  margin: 0vh;
+  padding: 0vh;
+}
+
+.header2 {
+  background-image: url("./images/vintage_cam.jpg");
+  background-size: cover;
+  background-position: 0vmin;
+  background-repeat: no-repeat;
+  height: 35vh;
+  position: relative;
+  margin: 0vh;
+  padding: 0vh;
+}
+
+.header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:cornflowerblue;
+    text-indent: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Caprasimo';
+    font-size: 8em;
+}
+
+.center{
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 50%;
+  width: 410px;
+  padding: 2vh;
+  margin: 0% 50% 0% 33%;
+  border-style: groove;
+}
+
+label {
+  display: block;
+  margin-bottom: .7vh;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="select"],
+input[type="submit"], 
+input[type="form-select"]{
+  display: block;
+  width: 400px;
+  margin-bottom: 1.5vh;
+}
+
+body, h1{
+  margin: .3vh;
+  padding: 1.5vh;
+  list-style: none;
+}
+
+.bloggrid{
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  display: grid;
+  gap: 1.5vh;
+}
+
+.blogitem1{
+  grid-column: 1/span 2;
+}
+
+.blogitem4{
+  grid-area: 3/span 2;
+}
+
+
+/*fonts css*/
+
+@font-face {
+  font-family: 'Aboreto-Regular';
+  src: url('./fonts/Aboreto-Regular.ttf') format('truetype')
+}
+@font-face{
+  font-family: 'Gowun Dodum';
+  src: url('./fonts/GowunDodum-Regular.ttf') format('truetype')
+}
+@font-face{
+  font-family: 'Edu Beginner';
+  src: url('./fonts/EduSABeginner-VariableFont_wght.ttf'); format('truetype')
+}
+
+@font-face{
+  font-family: 'Caprasimo';
+  src: url('./fonts/Caprasimo-Regular.ttf'); format('truetype')
+}
+
+@font-face{
+  font-family: 'Righteous';
+  src: url('./fonts/Righteous-Regular.ttf'); format('truetype')
+}
+
+@font-face{
+  font-family: 'Handjet';
+  src: url('./fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf'); format('truetype')
+}
+
+/*.h1{
+  font-family: 'Handjet';
+  padding: .7vh;
+  font-size: 1.5em;
+}*/
+
+.h2{
+  font-family: 'Handjet';
+  padding: .7vh;
+}
+
+.p1{
+  font-family: 'Gowun Dodum';
+  font-size: 20px;
+  text-indent: 2em;
+  text-align: left;
+  padding: 2vh;
+}
+
+.p2{
+  font-family: 'Righteous';
+  font-size: 30px;
+  text-align: left;
+  padding: 2vh;
+}
+
+.p3{
+  font-family: 'Gowun Dodum';
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5vh;
+}
+
+.p4{
+  font-family: 'Gowun Dodum';
+  font-size: 20px;
+  text-indent: 2em;
+  padding: 1.5vh;
+}
+
+.p5{
+  font-family: 'Gowun Dodum';
+  font-size: 15px;
+  text-align: center;
+  padding: 1.5vh;
+}
+
+/*image and animation css*/
+
+img{
+  vertical-align: middle;
+  padding: 2%
+}
+
+/*@keyframes fade-in-houseintrees {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-container:nth-child(1) {
+   animation: fade-in-houseintrees 5s ease-in-out forwards;
+}*/
+
+#showImageText {
+  cursor: pointer;
+  color: #75ABBC;
+  text-decoration: none;
+}
+
+/*footer css*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height: 20vh;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 2vh;
+  text-decoration: none;
+}
+
+/*08-19-2023:
+Overall changes made to certain absolute margin and padding sizes (from px to vh)
+Bootstrap navbar so nav css and in-header search bar removed
+Bootstrap used for grid layouts on about page
+Minimal change: fonts
+Added animations to pictures
+08-22-2023:
+Removed animations from images on blog page and remade into cards
+08-28-2023
+Moved comments to bottom of CSS until uploaded to repository
+Added meta tags and keywords
+*/
