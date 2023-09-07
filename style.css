@@ -125,9 +125,14 @@ body, h1{
   padding: .7vh;
 }
 
+.h1{
+  padding: .7vh;
+  text-align: right;
+}
+
 .p1{
   font-family: 'Gowun Dodum';
-  font-size: 20px;
+  font-size: 1.25em;
   text-indent: 2em;
   text-align: left;
   padding: 2vh;
@@ -135,30 +140,37 @@ body, h1{
 
 .p2{
   font-family: 'Righteous';
-  font-size: 30px;
+  font-size: 1.9em;
   text-align: left;
   padding: 2vh;
 }
 
 .p3{
   font-family: 'Gowun Dodum';
-  font-size: 20px;
+  font-size: 1.25em;
   text-align: center;
   padding: 1.5vh;
 }
 
 .p4{
   font-family: 'Gowun Dodum';
-  font-size: 20px;
+  font-size: 1.25em;
   text-indent: 2em;
   padding: 1.5vh;
 }
 
 .p5{
   font-family: 'Gowun Dodum';
-  font-size: 15px;
+  font-size: .9em;
   text-align: center;
   padding: 1.5vh;
+}
+
+.p6{
+  font-family: 'Aboreto-Regular';
+  font-size: 1.5em;
+  text-align: left;
+  padding: 2vh;
 }
 
 /*image and animation css*/
@@ -166,6 +178,11 @@ body, h1{
 img{
   vertical-align: middle;
   padding: 2%
+}
+
+.equalsize{
+    height: 42.37vh;
+    width: 28.25vh;
 }
 
 /*@keyframes fade-in-houseintrees {
@@ -193,7 +210,8 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  height: 20vh;
+  height: 15vh;
+  width: 100%;
 }
 
 .footer-icons a {
@@ -202,16 +220,3 @@ footer {
   margin: 2vh;
   text-decoration: none;
 }
-
-/*08-19-2023:
-Overall changes made to certain absolute margin and padding sizes (from px to vh)
-Bootstrap navbar so nav css and in-header search bar removed
-Bootstrap used for grid layouts on about page
-Minimal change: fonts
-Added animations to pictures
-08-22-2023:
-Removed animations from images on blog page and remade into cards
-08-28-2023
-Moved comments to bottom of CSS until uploaded to repository
-Added meta tags and keywords
-*/

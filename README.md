@@ -21,3 +21,7 @@ Updates/issues that have occurred as I've been building the page:
 1. Finally uploaded via VSCode
 2. Added a line of bolded and colored text to aboutme.html
 3. Added TA collaborators 
+
+09-05-2023
+1. Added another page to display my work
+2. Changed "animation" to popover in aboutme.html
