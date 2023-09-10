@@ -25,3 +25,6 @@ Updates/issues that have occurred as I've been building the page:
 09-05-2023
 1. Added another page to display my work
 2. Changed "animation" to popover in aboutme.html
+
+09-10-2023
+1. Added images and fonts to their own branch within the main
