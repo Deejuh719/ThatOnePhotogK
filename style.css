@@ -1,5 +1,5 @@
 .header {
-  background-image: url("./images/compandcoffee.jpg");
+  background-image: url("../../compandcoffee.jpg");
   background-size: cover;
   background-position: 0vmin;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 
 .header2 {
-  background-image: url("./images/vintage_cam.jpg");
+  background-image: url("../../vintage_cam.jpg");
   background-size: cover;
   background-position: 0vmin;
   background-repeat: no-repeat;
@@ -88,30 +88,30 @@ body, h1{
 
 @font-face {
   font-family: 'Aboreto-Regular';
-  src: url('./fonts/Aboreto-Regular.ttf') format('truetype')
+  src: url('../../Aboreto-Regular.ttf') format('truetype')
 }
 @font-face{
   font-family: 'Gowun Dodum';
-  src: url('./fonts/GowunDodum-Regular.ttf') format('truetype')
+  src: url('../../GowunDodum-Regular.ttf') format('truetype')
 }
 @font-face{
   font-family: 'Edu Beginner';
-  src: url('./fonts/EduSABeginner-VariableFont_wght.ttf'); format('truetype')
+  src: url('../../EduSABeginner-VariableFont_wght.ttf'); format('truetype')
 }
 
 @font-face{
   font-family: 'Caprasimo';
-  src: url('./fonts/Caprasimo-Regular.ttf'); format('truetype')
+  src: url('../../Caprasimo-Regular.ttf'); format('truetype')
 }
 
 @font-face{
   font-family: 'Righteous';
-  src: url('./fonts/Righteous-Regular.ttf'); format('truetype')
+  src: url('../../Righteous-Regular.ttf'); format('truetype')
 }
 
 @font-face{
   font-family: 'Handjet';
-  src: url('./fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf'); format('truetype')
+  src: url('../../Handjet-VariableFont_ELGR,ELSH,wght.ttf'); format('truetype')
 }
 
 /*.h1{
