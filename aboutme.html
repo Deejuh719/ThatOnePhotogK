@@ -59,19 +59,19 @@ $(document).ready(function(){
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
+          <a class="nav-link" href="index.html">Site Contents</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="aboutme.html">About Me</a>
           </li>
         <li class="nav-item">
             <a class="nav-link" href="mywork.html">My Work</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="sitecontents.html">Site Contents</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="blog.html">Mini Blog</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="index.html">Learn More</a>
+            <a class="nav-link" href="learnmore.html">Learn More</a>
           </li>
       </ul>
       <form class="d-flex">
@@ -105,6 +105,13 @@ $(document).ready(function(){
   </div>
 </div>
   <footer>
+    <div>
+      <h4>Switch to Light&sol;Dark Mode</h4>
+      <label class="toggle-switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
     <div class="footer-icons">
       <p class="p5"> Visit my cosplay Instagram, my LinkedIn, and my favorite Spotify Podcast</p>
       <a href="https://www.instagram.com/procrastination_cosplay/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -112,6 +119,7 @@ $(document).ready(function(){
       <a href="https://open.spotify.com/show/1cpyLfDHP1cNnyOb478qrt?si=QJYF8Yw6QH21z8ivvbc33w" target="_blank"><i class="fab fa-spotify"></i></a>
     </div>
   </footer>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
   <!--<script>
   const showImageText = document.getElementById('showImageText');
