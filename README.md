@@ -28,3 +28,9 @@ Updates/issues that have occurred as I've been building the page:
 
 09-10-2023
 1. Added images and fonts to their own branch within the main
+
+09-26-2023
+1. Changed index page and rearranged the page list
+2. Added dark mode slider to footer
+3. Added image carousel to "My Work" page
+4. Changed form to modal
