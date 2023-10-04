@@ -53,3 +53,12 @@ previousImage.addEventListener('click', function(){
 nextImage.addEventListener('click', function(){
     slideRight();
 });
+
+function typing(){
+    if(i<title.length){
+        document.getElementById("title").innerHTML += title.charAt(i);
+        i++
+        setTimeout(typing,50);
+    }
+}
+typing();
