@@ -79,7 +79,7 @@ function typing(element, speed) {
 }
 
 var speed = 100;
-var h5 = document.querySelector('h5');
+var h5 = document.getElementById('logDate');
 var delay = h5.innerHTML.length * speed + speed;
 
 typing(h5, speed);
