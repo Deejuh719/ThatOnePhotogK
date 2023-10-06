@@ -54,32 +54,33 @@ nextImage.addEventListener('click', function(){
     slideRight();
 });
 
-/**function typing(){
-    if(i<title.length){
-        document.getElementById("title").innerHTML += title.charAt(i);
-        i++
-        setTimeout(typing,50);
+var i = 0;
+var j = 0;
+const text = 'Log Date: 29-Jul-2023';
+const text2 = 'Log Date: 22-Aug-2023';
+
+window.addEventListener('load', function(){
+    executeAsynchronously([typing, typing2], 75);
+});
+
+function executeAsynchronously(functions, timeout) {
+    for (var i = 0; i < functions.length; i++) {
+        setTimeout(functions[i], timeout);
     }
 }
-typing();
-*/
-function typing(element, speed) {
-    var text = element.innerHTML;
-    element.innerHTML = "";
 
-    var i = 0;
-    var timer = setInterval(function() {
-        if(i < text.length) {
-            element.append(text.charAt(i));
-            i++;
-        } else {
-            clearInterval(timer);
-        }
-    }, speed);
+function typing(){
+    if(i<text.length){
+        document.getElementById("logDate").innerHTML += logDate.charAt(i);
+        i++
+        setTimeout(typing,75);
+    }
 }
 
-var speed = 100;
-var h5 = document.getElementById('logDate');
-var delay = h5.innerHTML.length * speed + speed;
-
-typing(h5, speed);
+function typing2(){
+    if(j<text2.length){
+        document.getElementById("logDate2").innerHTML += logDate2.charAt(j);
+        j++
+        setTimeout(typing2,75);
+    }
+}
