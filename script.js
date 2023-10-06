@@ -81,7 +81,7 @@ function typing(startIndex){
 function typing2(startIndex){
     var j = startIndex;
     if(j<text2.length){
-        document.getElementById("logDate2").innerHTML += text2.charAt(j);
+        document.getElementsByClassName("h2").innerHTML += text2.charAt(j);
         j++
         setTimeout(function() {
             typing2(j);
