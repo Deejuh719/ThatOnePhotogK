@@ -70,7 +70,7 @@ function executeAsynchronously(functions, timeout) {
 function typing(startIndex){
     var i = startIndex;
     if(i<text.length){
-        document.getElementById("logDate").innerHTML += logDate.charAt(i);
+        document.getElementById("logDate").innerHTML += text.charAt(i);
         i++
         setTimeout(function() {
             typing(i);
@@ -81,7 +81,7 @@ function typing(startIndex){
 function typing2(startIndex){
     var j = startIndex;
     if(j<text2.length){
-        document.getElementById("logDate2").innerHTML += logDate2.charAt(j);
+        document.getElementById("logDate2").innerHTML += text2.charAt(j);
         j++
         setTimeout(function() {
             typing2(j);
