@@ -54,8 +54,6 @@ nextImage.addEventListener('click', function(){
     slideRight();
 });
 
-var i = 0;
-var j = 0;
 const text = 'Log Date: 29-Jul-2023';
 const text2 = 'Log Date: 22-Aug-2023';
 
@@ -69,18 +67,24 @@ function executeAsynchronously(functions, timeout) {
     }
 }
 
-function typing(){
+function typing(startIndex){
+    var i = startIndex;
     if(i<text.length){
         document.getElementById("logDate").innerHTML += logDate.charAt(i);
         i++
-        setTimeout(typing,75);
+        setTimeout(function() {
+            typing(i);
+        }, 75);
     }
 }
 
-function typing2(){
+function typing2(startIndex){
+    var j = startIndex;
     if(j<text2.length){
         document.getElementById("logDate2").innerHTML += logDate2.charAt(j);
         j++
-        setTimeout(typing2,75);
+        setTimeout(function() {
+            typing2(j);
+        }, 75);
     }
 }
