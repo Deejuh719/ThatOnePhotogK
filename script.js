@@ -54,7 +54,7 @@ nextImage.addEventListener('click', function(){
     slideRight();
 });
 
-function typing(){
+/**function typing(){
     if(i<title.length){
         document.getElementById("title").innerHTML += title.charAt(i);
         i++
@@ -62,3 +62,24 @@ function typing(){
     }
 }
 typing();
+*/
+function typing(element, speed) {
+    var text = element.innerHTML;
+    element.innerHTML = "";
+
+    var i = 0;
+    var timer = setInterval(function() {
+        if(i < text.length) {
+            element.append(text.charAt(i));
+            i++;
+        } else {
+            clearInterval(timer);
+        }
+    }, speed);
+}
+
+var speed = 100;
+var h5 = document.querySelector('h5');
+var delay = h5.innerHTML.length * speed + speed;
+
+typing(h5, speed);
