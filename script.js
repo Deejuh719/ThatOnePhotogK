@@ -54,3 +54,13 @@ nextImage.addEventListener('click', function(){
     slideRight();
 });
 
+/*mouseover image cards*/
+function imageEnlarge(x){
+    x.style.height = "110%";
+    x.style.width = "110%";
+}
+
+function regSize(x){
+    x.style.height = "80%";
+    x.style.width = "80%";
+}

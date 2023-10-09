@@ -186,13 +186,15 @@ font-size: 1.5em;
 }*/
 
 .h2{
-font-family: 'Handjet';
+font-family: 'Righteous';
 padding: .7vh;
+text-align: left;
 }
 
 .h1{
 padding: .7vh;
-text-align: right;
+text-align: left;
+font-family: 'Righteous';
 }
 
 .p1{
@@ -250,18 +252,7 @@ height: 42.37vh;
 width: 28.25vw;
 }
 
-/*@keyframes fade-in-houseintrees {
-from {
-opacity: 0;
-}
-to {
-opacity: 1;
-}
-}
 
-.image-container:nth-child(1) {
-animation: fade-in-houseintrees 5s ease-in-out forwards;
-}*/
 
 #showImageText {
 cursor: pointer;
@@ -318,6 +309,8 @@ opacity: 0;
 width: 0;
 height: 0;
 }
+
+/*slider toggle*/
 
 .slider {
 position: absolute;
