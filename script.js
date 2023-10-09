@@ -54,37 +54,3 @@ nextImage.addEventListener('click', function(){
     slideRight();
 });
 
-const text = 'Log Date: 29-Jul-2023';
-const text2 = 'Log Date: 22-Aug-2023';
-
-window.addEventListener('load', function(){
-    executeAsynchronously([typing, typing2], 75);
-});
-
-function executeAsynchronously(functions, timeout) {
-    for (var i = 0; i < functions.length; i++) {
-        setTimeout(functions[i], timeout);
-    }
-}
-
-function typing(startIndex){
-    var i = startIndex;
-    if(i<text.length){
-        document.getElementById("logDate").innerHTML += text.charAt(i);
-        i++
-        setTimeout(function() {
-            typing(i);
-        }, 75);
-    }
-}
-
-function typing2(startIndex){
-    var j = startIndex;
-    if(j<text2.length){
-        document.getElementsByClassName("h2").innerHTML += text2.charAt(j);
-        j++
-        setTimeout(function() {
-            typing2(j);
-        }, 75);
-    }
-}

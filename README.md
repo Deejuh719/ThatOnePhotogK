@@ -34,3 +34,7 @@ Updates/issues that have occurred as I've been building the page:
 2. Added dark mode slider to footer
 3. Added image carousel to "My Work" page
 4. Changed form to modal
+
+10-09-2023
+1. Added projects page
+2. 
