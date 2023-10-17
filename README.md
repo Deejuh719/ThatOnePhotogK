@@ -41,3 +41,4 @@ Updates/issues that have occurred as I've been building the page:
 
 10-16-2023
 1. Form validation effects added
+2. Changed form from modal to on page to add effects
