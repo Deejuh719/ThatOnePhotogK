@@ -38,3 +38,6 @@ Updates/issues that have occurred as I've been building the page:
 10-09-2023
 1. Added projects page
 2. Made mouseover, mouseout events on images on page
+
+10-16-2023
+1. Form validation effects added

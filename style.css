@@ -15,6 +15,7 @@ background-size: cover;
 background-position: 0vmin;
 background-repeat: no-repeat;
 height: 30vh;
+max-width: 540px;
 min-width: 100vw;
 position: relative;
 }
@@ -25,6 +26,7 @@ background-size: cover;
 background-position: 0vmin;
 background-repeat: no-repeat;
 height: 35vh;
+max-width: 540px;
 min-width: 100vw;
 position: relative;
 }
@@ -38,6 +40,8 @@ text-indent: 1.5em;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 font-family: 'Caprasimo';
 font-size: 8em;
+max-width: 720px;
+background-position: fixed;
 }
 
 .center{
@@ -46,29 +50,64 @@ text-align: center;
 justify-items: center;
 }
 
-.form-container {
-display: grid;
-grid-template-columns: 50%;
-width: 410px;
-padding: 2vh;
-margin: 0% 50% 0% 33%;
-border-style: groove;
+.button-like:not(.dark-mode) {
+  padding: 0.5em 1.1em;
+  border: 0;
+  border-radius: 0.1875em;
+  background-color: #78c3ee;
+  box-shadow: none;
+  color: #fff;
+  font-size: 2.5em;
+  margin: 5%;
+  text-align: center;
+  font-family: 'Handjet';
 }
 
-label {
-display: block;
-margin-bottom: .7vh;
+/*form stuff*/
+
+input[type="email"]{
+  width: 17em;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="select"],
-input[type="submit"], 
-input[type="form-select"]{
-display: block;
-width: 400px;
-margin-bottom: 1.5vh;
+#selectCourse {
+  width: 17em;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submitButton {
+  padding: 0.5em 1.1em;
+  border: 0;
+  border-radius: 0.1875em;
+  background-color: #78c3ee;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 5%;
+  text-align: center;
+  font-family: 'Handjet';
+}
+
+#cancelButton {
+  padding: 0.5em 1.1em;
+  border: 0;
+  border-radius: 0.1875em;
+  background-color: #ef435a;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 5%;
+  text-align: center;
+  font-family: 'Handjet';
+}
+
+.red-border {
+  border: #ef435a solid 2px;
 }
 
 body, h1{
@@ -179,12 +218,6 @@ font-family: 'Handjet';
 src: url('fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf'); format('truetype')
 }
 
-/*.h1{
-font-family: 'Handjet';
-padding: .7vh;
-font-size: 1.5em;
-}*/
-
 .h2{
 font-family: 'Righteous';
 padding: .7vh;
@@ -252,8 +285,6 @@ height: 42.37vh;
 width: 28.25vw;
 }
 
-
-
 #showImageText {
 cursor: pointer;
 color: #75ABBC;
@@ -262,14 +293,16 @@ text-decoration: none;
 
 /*footer css*/
 
-footer {
+.footer {
 background-color: #333;
 color: #fff;
-text-align: center;
-height: 15vh;
+display: flex;
+text-align: justify;
+justify-content: center;
+height: 18vh;
 min-width: 100vw;
-bottom: 0;
-position: bottom;
+background-position: fixed;
+position: absolute;
 }
 
 .footer-icons a {
@@ -277,6 +310,9 @@ color: #fff;
 font-size: 24px;
 margin: 2vh;
 text-decoration: none;
+padding: 2%;
+margin-left: 2%;
+position: relative;
 }
 
 /*dark mode toggle in footer*/
@@ -294,6 +330,10 @@ margin: 0;
 padding: 0;
 }
 
+.dark-mode button, .dark-mode img, .dark-mode header, .dark-mode footer {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .toggle-switch {
 position: relative;
@@ -349,3 +389,4 @@ transform: translateX(2rem);
 background: #303136;
 box-shadow: inset -3px -2px 5px -2px #8983f7, inset -6px -5px 0 0 #a3dafb;
 }
+

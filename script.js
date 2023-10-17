@@ -1,5 +1,7 @@
 /*dark-mode*/
 const body = document.querySelector('body');
+const buttons = document.querySelector('button')
+const buttonLike =document.getElementById('.button-like')
 const modeToggle = document.getElementById('mode-toggle');
 const modeStatus = document.querySelector('.mode-status');
 
@@ -63,4 +65,25 @@ function imageEnlarge(x){
 function regSize(x){
     x.style.height = "80%";
     x.style.width = "80%";
+}
+
+/**Modal form
+ * Form validation */
+function submitForm() {
+    var courseSelect = document.getElementById('selectCourse');
+    if(courseSelect.value === ''){
+        courseSelect.classList.add('red-border');
+        return false;
+    } else {
+        courseSelect.classList.remove('red-border');
+        resetForm();
+        document.getElementById('submitted').style.display = 'block';
+        return false;
+    }
+}
+
+function clearForm(){
+    var form = document.getElementById('learnMore');
+    form.reset();
+    document.getElementById('clearMessage').style.display = 'block';
 }
