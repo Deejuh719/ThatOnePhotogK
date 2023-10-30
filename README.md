@@ -42,3 +42,12 @@ Updates/issues that have occurred as I've been building the page:
 10-16-2023
 1. Form validation effects added
 2. Changed form from modal to on page to add effects
+
+10-22-2023
+1. Attempted to add a quiz to my code, did not work. Brain didn't want to make it function
+2. Also didn't work because Visual Studio quit working on my computer before I could commit any of the changes
+
+10-29-2023
+1. Added branches to the 'master' for CodeWars, HackerRank, and LeetCode work
+2. Added practice code to those branches
+3. Committed to the wrong branch, redid it here
