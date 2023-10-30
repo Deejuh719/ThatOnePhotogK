@@ -59,4 +59,4 @@ Updates/issues that have occurred as I've been building the page:
 
 10-30-2023
 1. Added :hover effects to images on project page since JS didn't want to do the thing (and VS is working on my computer)
-2. Re-redid the README because why not, feels right
+2. Re-redid the README because why not, feels right 
