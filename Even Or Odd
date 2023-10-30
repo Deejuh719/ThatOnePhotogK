@@ -1,0 +1,13 @@
+function evenOrOdd(number) {
+  if(number % 2 === 0){
+//testing the code to see if it's even or odd by seeing if there is  a remainder of 0
+    //when divided by 2
+    return 'Even'
+    //console.log('Even') commented out because computer is looking for a return function
+    //if so, console will print even
+  } else{
+    return 'Odd'
+    //console.log('Odd')
+    //otherwishe it will print odd
+  }
+}
