@@ -104,7 +104,7 @@ justify-items: center;
 
 #site:hover{
   transition: transform 0.5s;
-  transform: scale(2);
+  transform: scale(2); 
 }
 
 #wedding{
