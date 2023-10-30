@@ -58,7 +58,7 @@ previousImage.addEventListener('click', function(){
 nextImage.addEventListener('click', function(){
     slideRight();
 });
- 
+
 
 /**Modal form
  * Form validation */
