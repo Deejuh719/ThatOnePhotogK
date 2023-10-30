@@ -1,4 +1,4 @@
-body:not(.dark-mode) {
+.basicBody:not(.dark-mode) {
   margin: 0;
   padding: 0;
   background-image: url('images/minimalcomputer.jpg');
@@ -7,6 +7,17 @@ body:not(.dark-mode) {
   background-attachment: fixed;
   background-position: center center;
   min-height: 100vh;
+}
+
+.triviaBody:not(.dark-mode){
+  background:rgba(0, 0, 0, 0.3) url('images/brickwall.jpg');
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+
 }
 
 .header:not(.dark-mode) {
@@ -26,9 +37,7 @@ background-size: cover;
 background-position: 0vmin;
 background-repeat: no-repeat;
 height: 35vh;
-max-width: 540px;
-min-width: 100vw;
-position: relative;
+width: 100vw;
 }
 
 .header-content {
@@ -42,6 +51,16 @@ font-family: 'Caprasimo';
 font-size: 8em;
 max-width: 720px;
 background-position: fixed;
+}
+
+.triviaHeader:not(.dark-mode){
+  background-image: url("images/quizsign.jpg");
+  background-size: cover;
+  background-position: 0vmin;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100vw;
+  position: relative;
 }
 
 .center{
@@ -61,6 +80,103 @@ justify-items: center;
   margin: 5%;
   text-align: center;
   font-family: 'Handjet';
+}
+
+/*image enlargment*/
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-item {
+  text-align: center;
+}
+
+#site{
+  background-image: url("./images/siteshot.png");
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#site:hover{
+  transition: transform 0.5s;
+  transform: scale(2);
+}
+
+#wedding{
+  background-image: url("./images/inviteshot.png");
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#wedding:hover{
+  transition: transform 0.5s;
+  transform: scale(2);
+}
+
+#string{
+  background-image: url("./images/stringanswers.png");
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#string:hover{
+  transition: transform 0.5s;
+  transform: scale(2);
+}
+
+#calculator{
+  background-image: url("./images/calculatorproject.png");
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#calculator:hover{
+  transition: transform 0.5s;
+  transform: scale(2);
+}
+
+#hackerrank{
+  background-image: url("./images/stdinstdout.png");
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+#hackerrank:hover{
+  transition: transform 0.5s;
+  transform: scale(2);
+}
+
+#codewars{
+  background-image: url("./images/evenorodd.png");
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#codewars:hover{
+  transition: transform 0.5s;
+  transform: scale(2);  
 }
 
 /*form stuff*/
@@ -218,6 +334,11 @@ font-family: 'Handjet';
 src: url('fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf'); format('truetype')
 }
 
+@font-face {
+  font-family: 'Neon Future';
+  src: url('fonts/neon-future.regular.ttf'); format('truetype')
+}
+
 .h2{
 font-family: 'Righteous';
 padding: .7vh;
@@ -271,6 +392,33 @@ font-family: 'Aboreto-Regular';
 font-size: 1.5em;
 text-align: left;
 padding: 2vh;
+}
+
+.triviaFont{
+  font-family: 'Neon Future';
+  color: #f648b0;
+  font-size: 4em;
+  text-align: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.triviaBorder{
+  border: 5px double rgb(217, 87, 240);
+  border-radius: 5px;
+  font-family: 'Neon Future';
+  color: #53e75f;
+  font-size: 2.5em;
+  text-align: center;
+  justify-content: center;
+}
+
+.strtbtn{
+padding-block: 1.5rem;
+border-radius: 10px;
+background-color: #78c3ee;
+opacity: 50%;
+margin: 5px;
 }
 
 /*image and animation css*/

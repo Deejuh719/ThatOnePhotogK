@@ -1,3 +1,6 @@
+import questions from 'json/questions.json' assert { type: 'json' }
+import users from 'json/users.json' assert { type: 'json' }
+
 /*dark-mode*/
 const body = document.querySelector('body');
 const buttons = document.querySelector('button')
@@ -56,16 +59,6 @@ nextImage.addEventListener('click', function(){
     slideRight();
 });
 
-/*mouseover image cards*/
-function imageEnlarge(x){
-    x.style.height = "110%";
-    x.style.width = "110%";
-}
-
-function regSize(x){
-    x.style.height = "80%";
-    x.style.width = "80%";
-}
 
 /**Modal form
  * Form validation */
