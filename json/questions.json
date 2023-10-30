@@ -1,0 +1,42 @@
+{
+"question1": {
+    "id": "question1",
+    "question":"In the state of Georgia, it's illegal to eat fried chicken with a fork.",
+    "answers": [
+        "True",
+        "False"
+    ],
+    "correctAnswer":"True"
+},
+"question2": {
+    "id": "question2",
+    "question":"How long is New Zealand's Ninety Mile Beach?",
+    "answers":[
+        "105 Miles",
+        "90 Miles",
+        "55 Miles",
+        "91 Miles"
+    ],
+    "correctAnswer": "55 Miles"
+},
+"question3": {
+    "id":"question3",
+    "question":"What is measured in 'Mickeys'?",
+    "answers": [
+        "Space between shops and attraction in Disney",
+        "Speed of a rodent on a wheel",
+        "The size of Mickey logos",
+        "The speed of a computer mouse"
+    ],
+    "correctAnswer":"The speed of a computer mouse"
+},
+"question4": {
+    "id":"question4",
+    "queston":"True or False? Australian soldiers fought emus in 1932?",
+    "answers": [
+        "True",
+        "False"
+    ],
+    "correctAnswer":"True"
+}
+}
