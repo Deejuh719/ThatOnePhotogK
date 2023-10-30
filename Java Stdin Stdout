@@ -39,3 +39,6 @@ public class Solution {
         System.out.println("Int: " + i);
     }
 }
+
+
+https://www.hackerrank.com/challenges/java-stdin-stdout/copy-from/322726499
