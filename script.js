@@ -2,13 +2,14 @@ import questions from 'json/questions.json' assert { type: 'json' }
 import users from 'json/users.json' assert { type: 'json' }
 
 /*dark-mode*/
-const body = document.querySelector('body');
 const buttons = document.querySelector('button')
 const buttonLike =document.getElementById('button-like')
-const modeToggle = document.getElementById('mode-toggle');
 const modeStatus = document.querySelector('.mode-status');
 
 document.addEventListener("DOMContentLoaded", function() {
+    const body = document.querySelector('body');
+    const modeToggle = document.getElementById('mode-toggle');
+    
     function toggleMode() {
         body.classList.toggle('dark-mode');
     }
