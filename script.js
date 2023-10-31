@@ -30,7 +30,7 @@ function initializeSlider() {
     reset();
     images[currentIndex].classList.add('active');
 }
-
+ 
 function slideLeft() {
     reset();
     currentIndex--;
