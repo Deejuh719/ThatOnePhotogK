@@ -4,14 +4,17 @@ import users from 'json/users.json' assert { type: 'json' }
 /*dark-mode*/
 const body = document.querySelector('body');
 const buttons = document.querySelector('button')
-const buttonLike =document.getElementById('.button-like')
+const buttonLike =document.getElementById('button-like')
 const modeToggle = document.getElementById('mode-toggle');
 const modeStatus = document.querySelector('.mode-status');
 
-function toggleMode() {
-    body.classList.toggle('dark-mode');
-}
-modeToggle.addEventListener('click', toggleMode);
+document.addEventListener("DOMContentLoaded", function() {
+    function toggleMode() {
+        body.classList.toggle('dark-mode');
+    }
+
+    modeToggle.addEventListener('click', toggleMode);
+});
 
 /*mywork slider*/
 const images = document.querySelectorAll('#slider img');
