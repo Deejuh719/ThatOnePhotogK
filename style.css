@@ -94,7 +94,6 @@ justify-items: center;
 }
 
 #site{
-  background-image: url("./images/siteshot.png");
   height: 300px;
   width: 400px;
   background-size: cover;
@@ -108,7 +107,6 @@ justify-items: center;
 }
 
 #wedding{
-  background-image: url("./images/inviteshot.png");
   height: 300px;
   width: 400px;
   background-size: cover;
@@ -122,7 +120,6 @@ justify-items: center;
 }
 
 #string{
-  background-image: url("./images/stringanswers.png");
   height: 300px;
   width: 400px;
   background-size: cover;
@@ -136,7 +133,6 @@ justify-items: center;
 }
 
 #calculator{
-  background-image: url("./images/calculatorproject.png");
   height: 300px;
   width: 400px;
   background-size: cover;
@@ -150,7 +146,6 @@ justify-items: center;
 }
 
 #hackerrank{
-  background-image: url("./images/stdinstdout.png");
   height: 300px;
   width: 400px;
   background-size: cover;
@@ -166,7 +161,6 @@ justify-items: center;
 }
 
 #codewars{
-  background-image: url("./images/evenorodd.png");
   height: 300px;
   width: 400px;
   background-size: cover;
