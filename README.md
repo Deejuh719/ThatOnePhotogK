@@ -59,3 +59,6 @@ Updates/issues that have occurred as I've been building the page:
 1. Added :hover effects to images on project page since JS didn't want to do the thing (and VS is working on my computer)
 2. Re-redid the README because why not, feels right
  
+ 11-3-2023
+ 1. Removed code that was bugging pages
+ 2. Enabled dark-mode to follow page switch/user preference

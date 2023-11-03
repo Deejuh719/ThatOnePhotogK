@@ -1,4 +1,4 @@
-.basicBody:not(.dark-mode) {
+body:not(.dark-mode) {
   margin: 0;
   padding: 0;
   background-image: url('images/minimalcomputer.jpg');
@@ -38,6 +38,7 @@ background-position: 0vmin;
 background-repeat: no-repeat;
 height: 35vh;
 width: 100vw;
+position: relative;
 }
 
 .header-content {
@@ -53,7 +54,7 @@ max-width: 720px;
 background-position: fixed;
 }
 
-.triviaHeader:not(.dark-mode){
+/*.triviaHeader:not(.dark-mode){
   background-image: url("images/quizsign.jpg");
   background-size: cover;
   background-position: 0vmin;
@@ -61,7 +62,7 @@ background-position: fixed;
   height: 40vh;
   width: 100vw;
   position: relative;
-}
+}*/
 
 .center{
 justify-content: center;
@@ -253,7 +254,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
-width: 100%; /* This ensures the container takes the full width */
+width: 100%;
 }
 
 #slider img{

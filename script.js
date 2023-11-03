@@ -1,5 +1,5 @@
-import questions from 'json/questions.json' assert { type: 'json' }
-import users from 'json/users.json' assert { type: 'json' }
+/*import questions from 'json/questions.json' assert { type: 'json' }
+import users from 'json/users.json' assert { type: 'json' }*/
 
 /*dark-mode*/
 const buttons = document.querySelector('button')
@@ -9,13 +9,23 @@ const modeStatus = document.querySelector('.mode-status');
 document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector('body');
     const modeToggle = document.getElementById('mode-toggle');
-    
+
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    if(isDarkMode){
+        body.classList.add('dark-mode');
+    }
+
     function toggleMode() {
         body.classList.toggle('dark-mode');
+
+        const currentMode = body.classList.contains('dark-mode') ? 'true':'false';
+        localStorage.setItem('darkMode', currentMode);
     }
 
     modeToggle.addEventListener('click', toggleMode);
 });
+
 
 /*mywork slider*/
 const images = document.querySelectorAll('#slider img');
