@@ -10,12 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector('body');
     const modeToggle = document.getElementById('mode-toggle');
 
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    if(isDarkMode){
-        body.classList.add('dark-mode');
-    }
-
     function toggleMode() {
         body.classList.toggle('dark-mode');
 
@@ -24,6 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     modeToggle.addEventListener('click', toggleMode);
+
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    if(isDarkMode){
+        body.classList.add('dark-mode');
+        modeToggle.checked = true;
+    }
 });
 
 

@@ -41,7 +41,7 @@ width: 100vw;
 position: relative;
 }
 
-.header-content {
+.header-content:not(.dark-mode) {
 position: absolute;
 bottom: 0;
 left: 0;
@@ -468,7 +468,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center center;
 min-height: 100vh;
-color: #F1EFEF;
+color: #bdbcbc;
 margin: 0;
 padding: 0;
 }
