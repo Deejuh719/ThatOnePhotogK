@@ -26,8 +26,7 @@ background-size: cover;
 background-position: 0vmin;
 background-repeat: no-repeat;
 height: 30vh;
-max-width: 540px;
-min-width: 100vw;
+width: 100vw;
 position: relative;
 }
 
@@ -52,6 +51,7 @@ font-family: 'Caprasimo';
 font-size: 8em;
 max-width: 720px;
 background-position: fixed;
+width: 100%;
 }
 
 /*.triviaHeader:not(.dark-mode){
@@ -434,30 +434,6 @@ color: #75ABBC;
 text-decoration: none;
 }
 
-/*footer css*/
-
-.footer {
-background-color: #333;
-color: #fff;
-display: flex;
-text-align: justify;
-justify-content: center;
-height: 18vh;
-min-width: 100vw;
-background-position: fixed;
-position: absolute;
-}
-
-.footer-icons a {
-color: #fff;
-font-size: 24px;
-margin: 2vh;
-text-decoration: none;
-padding: 2%;
-margin-left: 2%;
-position: relative;
-}
-
 /*dark mode toggle in footer*/
 .dark-mode {
 background: rgba(0, 0, 0, 0.5) url('images/minimalcomputer.jpg');
@@ -533,3 +509,29 @@ background: #303136;
 box-shadow: inset -3px -2px 5px -2px #8983f7, inset -6px -5px 0 0 #a3dafb;
 }
 
+/*footer css*/
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+  width: 100vw;
+  position: bottom;
+  }
+  
+  .footer-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 2vh;
+  text-decoration: none;
+  padding: 2%;
+  margin-left: 2%;
+  position: relative;
+  }
+  
+  .footer p{
+    text-align: center;
+  }

@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /*mywork slider*/
-const images = document.querySelectorAll('#slider img');
+const images = document.querySelectorAll('img');
 const previousImage = document.getElementById("prev");
 const nextImage = document.getElementById("next");
 
@@ -75,23 +75,38 @@ nextImage.addEventListener('click', function(){
 });
 
 
-/**Modal form
- * Form validation */
+ /* Form validation */
 function submitForm() {
     var courseSelect = document.getElementById('selectCourse');
     if(courseSelect.value === ''){
         courseSelect.classList.add('red-border');
         return false;
     } else {
+        var submitted = "Form Submitted! Thank you!";
+        return confirm(submitted);
         courseSelect.classList.remove('red-border');
         resetForm();
-        document.getElementById('submitted').style.display = 'block';
-        return false;
     }
 }
 
 function clearForm(){
     var form = document.getElementById('learnMore');
     form.reset();
-    document.getElementById('clearMessage').style.display = 'block';
+    var cleared = "Form Submission Has Been Cancelled.";
+    alert(cleared);
 }
+
+/*Form submission to json*/
+function handleSubmit(event){
+    event.preventDefault();
+
+    const data = new FormData(event.target);
+    const value = Object.fromEntries(data.entries());
+    value.selectCourse = data.getAll('selectCourse');
+    const jsonData = JSON.stringify(value);
+
+    console.log(jsonData);
+}
+
+const form = document.querySelector('form')
+form.addEventListener('submit', handleSubmit);

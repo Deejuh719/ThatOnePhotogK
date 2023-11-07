@@ -71,7 +71,7 @@
 <!--form-->
 <p class="button-like">Live in the US, Canada, or the UK? Want to learn more? Add your information below &#9759;</p>
 <div class="container">
-<form id="learnMore" onsubmit="return submitForm()">
+<form id="learnMore" onsubmit="return submitForm()" method="post">
   <div class="form-group">
   <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
   </div><br>
@@ -96,12 +96,10 @@
     <p><sub>*Some Courses only Available in the US as of 2023</sub></p>
   </div><br>
   <button id="submitButton" type="submit" class="btn btn-default">Submit</button><button id="cancelButton" onclick="clearForm()" class="btn btn-alert">Cancel</button>
-  <div id="clearMessage" style="display: none;">Submission Cancelled.</div>
-  <div id="submitted" style="display: none;">Information submitted. Thank you!</div>
 </form>
 </div>
-  <footer class="footer">
-   <div class="row row-cols-1 row-cols-md-2">
+<footer class="footer">
+  <div class="row row-cols-1 row-cols-md-2">
     <div class="col">
       <h6>Switch to Light&sol;Dark Mode</h6>
       <label class="toggle-switch">
@@ -109,15 +107,16 @@
         <span class="slider"></span>
       </label>
     </div>
-    <div class="footer-icons">
+    <div class="col">
+    <div class="footer-icons"> 
       <p class="p5"> Visit my cosplay Instagram, my LinkedIn, and my favorite Spotify Podcast</p>
       <a href="https://www.instagram.com/procrastination_cosplay/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.linkedin.com/in/khadijah-surratt/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://open.spotify.com/show/1cpyLfDHP1cNnyOb478qrt?si=QJYF8Yw6QH21z8ivvbc33w" target="_blank"><i class="fab fa-spotify"></i></a>
     </div>
-</div>
-</div>
-  </footer>
+    </div>
+  </div>
+</footer>
 <script src="https://unpkg.com/htmx.org@1.9.6"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script> 
