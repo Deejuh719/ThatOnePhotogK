@@ -97,16 +97,18 @@ function clearForm(){
 }
 
 /*Form submission to json*/
-function handleSubmit(event){
+function handleFormSubmission(event){
+    alert("Form submitted! Thank you!")
     event.preventDefault();
 
-    const data = new FormData(event.target);
-    const value = Object.fromEntries(data.entries());
-    value.selectCourse = data.getAll('selectCourse');
-    const jsonData = JSON.stringify(value);
-
+    const form = event.target;
+    const formData = new FormData(form);
+    const formObject = {};
+    
+    formData.forEach((value, key) =>{
+        formObject[key] = value;
+    });
+    const jsonData = JSON.stringify(formObject);
     console.log(jsonData);
+    form.reset();
 }
-
-const form = document.querySelector('form')
-form.addEventListener('submit', handleSubmit);

@@ -48,7 +48,7 @@
             </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search">
+          <input class="form-control me-2" id="SearchBar" type="text" placeholder="Search">
           <button class="btn btn-primary" type="button">Search</button>
         </form>
       </div>
@@ -61,17 +61,15 @@
       So first of all, what exactly is this page and what do I do?
       I am a <sub>beggining</sub> web designer and this?
       This is a lovely &ldquo;Sign Me Up!&rdquo; page!
-      <br><i><b>My</b></i> lovely sign me up page!
+      <i><b>My</b></i> lovely sign me up page!
       And what is its purpose? Aside from getting me an <i>excellent</i> grade <sub><sub>*hint hint*</sub></sub>.
-      It also gives you an
-      <br>opportunity to submit some information if you would like to learn a little more
-      about the program I am in, or others offered by
-      <br>Correlation One.
+      It also gives you an opportunity to submit some information if you would like to learn a little more
+      about the program I am in, or others offered by Correlation One.
     </p>
 <!--form-->
 <p class="button-like">Live in the US, Canada, or the UK? Want to learn more? Add your information below &#9759;</p>
 <div class="container">
-<form id="learnMore" onsubmit="return submitForm()" method="post">
+<form id="learnMore" onsubmit="return handleFormSubmission(event)" method="post">
   <div class="form-group">
   <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
   </div><br>
@@ -95,7 +93,7 @@
     </select>
     <p><sub>*Some Courses only Available in the US as of 2023</sub></p>
   </div><br>
-  <button id="submitButton" type="submit" class="btn btn-default">Submit</button><button id="cancelButton" onclick="clearForm()" class="btn btn-alert">Cancel</button>
+  <button id="submitButton" type="submit" class="btn btn-default">Submit</button><button id="cancelButton" class="btn btn-alert">Cancel</button>
 </form>
 </div>
 <footer class="footer">
